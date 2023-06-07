@@ -40,13 +40,13 @@ const mailingHandler = (db) => {
   router.post("/message", async (req, res) => {
     const { sender, receiver, message, title } = req.body;
 
-    if (!title) {
-      return res.json({ error: "title can't be empty" });
-    }
+    // if (!title) {
+    //   return res.json({ error: "title can't be empty" });
+    // }
 
-    if (message.length <= 10) {
-      return res.json({ error: "message is too short" });
-    }
+    // if (message.length <= 10) {
+    //   return res.json({ error: "message is too short" });
+    // }
 
     await mailService.createMessage(
       sender,
