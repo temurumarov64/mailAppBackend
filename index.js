@@ -7,10 +7,10 @@ const mysql = require("mysql");
 const cors = require("cors");
 const mailingHandler = require("./handlers/mailing");
 const db = mysql.createConnection({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12622788",
-  password: "ILFXtVtLI9",
-  database: "sql12622788",
+  host: "sql7.freesqldatabase.com",
+  user: "sql7626609",
+  password: "YP3N77Rn1V",
+  database: "sql7626609",
 });
 
 db.connect();
